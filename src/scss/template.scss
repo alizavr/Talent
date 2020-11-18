@@ -12,6 +12,10 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 33px;
+  @media only screen and (max-width: 767px) {
+    height: 180vh;
+  }
 }
 .title {
   font-size: 50px;
@@ -19,4 +23,74 @@
 }
 body {
   background-color: #fff;
+}
+.tit {
+  color: #8624db;
+  font-size: 12px;
+  margin-bottom: 34px;
+}
+.rubric {
+  font-size: 50px;
+  color: #29262b;
+  margin-bottom: 49px;
+  @media only screen and (max-width: 767px) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #29262b;
+  max-width: 560px;
+  margin-bottom: 50px;
+  line-height: 28px;
+}
+.talent {
+  position: relative;
+}
+.left__pic {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.work__pic {
+  max-width: 711px;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.work__pic--mob {
+  @media only screen and (max-width: 1800px) {
+    display: none;
+  }
+  @media only screen and (max-width: 767px) {
+    display: block;
+    width: 90%;
+  }
+}
+.picture {
+  display: flex;
+  justify-content: flex-end;
+  @media only screen and (max-width: 767px) {
+    margin-top: 63px;
+    justify-content: start;
+  }
+}
+.tit-mob {
+  color: #8624db;
+  font-size: 12px;
+  margin-bottom: 25px;
+  @media only screen and (max-width: 1800px) {
+    display: none;
+  }
+  @media only screen and (max-width: 767px) {
+    display: block;
+  }
+}
+.tit-mob-2 {
+  text-align: right;
 }
