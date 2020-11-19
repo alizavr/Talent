@@ -1,0 +1,34 @@
+.contact {
+  position: relative;
+  background: linear-gradient(#29106c 0%, #8624db 100%);
+  padding: 153px 0;
+  text-align: center;
+  &__caption {
+    max-width: 450px;
+    margin: auto;
+    font-size: 72px;
+    color: #ffffff;
+    margin-bottom: 34px;
+  }
+  &__subtitle {
+    font-size: 21px;
+    color: rgba($color: #ffffff, $alpha: 0.8);
+    line-height: 28px;
+    max-width: 620px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  &__pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 320px;
+  }
+  &__btn {
+    color: #ffffff;
+    background-color: #ff0164;
+    border-radius: 29px;
+    padding: 20px 50px;
+    display: inline-block;
+  }
+}

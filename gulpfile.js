@@ -17,7 +17,6 @@ var fontName = 'Icon';
 
 function scripts() {
     return  src([
-        'node_modules/jquery/dist/jquery.min.js',
         'src/js/app.js'
     ])
     .pipe(concat('app.min.js'))
