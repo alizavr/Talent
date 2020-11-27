@@ -1,6 +1,21 @@
 $(document).ready(function(){
 
-    $('.owl-carousel').owlCarousel({
+    $('#carousel-clients').owlCarousel({
+        loop:true,
+       nav: true,
+       dots: false,
+  
+        responsive:{
+            0:{
+                items:2
+            },
+  
+            768:{
+                items:4
+            }
+        }
+    });
+    $('#carousel-customer').owlCarousel({
         loop:true,
        nav: true,
        dots: false,
@@ -10,8 +25,8 @@ $(document).ready(function(){
                 items:1
             },
   
-            1000:{
-                items:1
+            768:{
+                items:3
             }
         }
     });

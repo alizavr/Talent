@@ -1,3 +1,11 @@
+$main-color: #29262b;
+$secondary-color: #ffffff;
+$secondary-alpha: rgba(
+  $color: #ffffff,
+  $alpha: 0.8,
+);
+$background-color: #f8f9fa;
+
 .wrapper {
   max-width: 919px;
   margin: auto;
@@ -6,31 +14,102 @@
     padding-right: 15px;
   }
 }
-.partition__banner {
+
+.block-banner__description {
+  color: $secondary-alpha;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 243px;
+}
+.text {
+  color: $secondary-alpha;
+  font-size: 21px;
+  max-width: 699px;
+  margin: 14px auto 59px auto;
+  @media only screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.block-banner__headline {
+  padding-bottom: 69px;
+  max-width: 354px;
+  color: $secondary-color;
+  font-size: 50px;
+  @media only screen and (max-width: 767px) {
+    font-size: 30px;
+    max-width: 300px;
+    padding-bottom: 25px;
+  }
+}
+.block-banner--black {
   background-image: url(../img/dist/Group.png);
-  height: 100vh;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 145px;
+  padding-bottom: 300px;
   position: relative;
   margin-bottom: 33px;
   @media only screen and (max-width: 767px) {
-    height: 180vh;
+    padding-top: 70px;
+    padding-bottom: 170px;
   }
 }
-
-.title {
-  font-size: 50px;
-  color: #ffffff;
+.block-banner--pink {
+  background-image: url(../img/dist/group-expert.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 280px;
+  padding-bottom: 185px;
+  position: relative;
+  top: -120px;
 }
 body {
   background-color: #fff;
 }
-.tit {
+.title {
+  font-size: 72px;
+  color: $secondary-color;
+  margin-bottom: 14px;
+  @media only screen and (max-width: 767px) {
+    font-size: 45px;
+  }
+}
+
+.button {
+  display: inline-block;
+  color: $secondary-color;
+  background-color: #ff0164;
+  border-radius: 29px;
+  padding: 20px 32px;
+  border: 3px solid transparent;
+  &:hover {
+    border: #ff0164 solid 3px;
+    background-color: transparent;
+    color: #ff0164;
+  }
+  &--purple {
+    background-color: #8624db;
+    margin-left: 20px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 19px;
+      margin-left: 0;
+    }
+    &:hover {
+      border: #8624db solid 3px;
+      background-color: transparent;
+      color: #8624db;
+    }
+  }
+}
+.subtitle {
   color: #8624db;
   font-size: 12px;
   margin-bottom: 34px;
 }
-.rubric {
+.headline {
   font-size: 50px;
   color: #29262b;
   margin-bottom: 49px;
@@ -39,7 +118,7 @@ body {
     margin-bottom: 32px;
   }
 }
-.text {
+.description {
   font-size: 16px;
   font-weight: 400;
   color: #29262b;
@@ -49,22 +128,20 @@ body {
 }
 .talent {
   position: relative;
-}
-.left__pic {
-  position: absolute;
-  top: 170px;
-  left: 0;
+  background-image: url(../img/dist/left_img.png);
+  background-repeat: no-repeat;
   @media only screen and (max-width: 767px) {
-    display: none;
+    background-image: none;
   }
 }
-.work__pic {
+
+.work__img {
   max-width: 711px;
   @media only screen and (max-width: 767px) {
     display: none;
   }
 }
-.work__pic--mob {
+.work__img--mobile {
   @media only screen and (max-width: 1800px) {
     display: none;
   }
@@ -73,7 +150,7 @@ body {
     width: 90%;
   }
 }
-.picture {
+.block-work_img {
   display: flex;
   justify-content: flex-end;
   @media only screen and (max-width: 767px) {
@@ -81,7 +158,7 @@ body {
     justify-content: start;
   }
 }
-.tit-mob {
+.subtitle-mobile {
   color: #8624db;
   font-size: 12px;
   margin-bottom: 25px;
@@ -91,7 +168,4 @@ body {
   @media only screen and (max-width: 767px) {
     display: block;
   }
-}
-.tit-mob-2 {
-  text-align: right;
 }
