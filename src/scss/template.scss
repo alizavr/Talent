@@ -9,12 +9,30 @@ $background-color: #f8f9fa;
 .wrapper {
   max-width: 919px;
   margin: auto;
-  @media only screen and (max-width: 767px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
+  // @media only screen and (max-width: 767px) {
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  // }
 }
+.block-banner__articles {
+  background-image: url(../img/dist/group-articles01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 214px;
+  padding-bottom: 185px;
+}
+.block-banner__footer {
+  background-image: url(../img/dist/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 
+  padding-top: 46px;
+  padding-bottom: 50px;
+}
 .block-banner__description {
   color: $secondary-alpha;
   font-size: 16px;

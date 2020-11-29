@@ -24,14 +24,26 @@
   content: "\E001";
 }
 
-.icon-left:before {
+.icon-right:before {
   content: "\E002";
 }
 
-.icon-right:before {
+.icon-social-facebook:before {
   content: "\E003";
 }
 
-.icon-uniq-1:before {
+.icon-social-instagram:before {
   content: "\E004";
+}
+
+.icon-social-linkedIn:before {
+  content: "\E005";
+}
+
+.icon-social-twitter:before {
+  content: "\E006";
+}
+
+.icon-uniq-1:before {
+  content: "\E007";
 }
