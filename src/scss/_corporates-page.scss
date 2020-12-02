@@ -1,0 +1,25 @@
+.banner--corporates {
+  background-image: url(../img/src/corporats.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  @media only screen and (max-width: 767px) {
+    background-image: url(../img/dist/mob.jpg);
+  }
+}
+.evidence {
+  &__description {
+    color: $secondary-color;
+    span {
+      color: #ff0164;
+    }
+  }
+  &__img {
+    max-width: 880px;
+    @media only screen and (max-width: 880px) {
+      display: none;
+    }
+  }
+}

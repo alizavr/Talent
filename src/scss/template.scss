@@ -82,6 +82,7 @@ $background-color: #f8f9fa;
   padding-bottom: 185px;
   position: relative;
   top: -120px;
+  text-align: center;
 }
 body {
   background-color: #fff;
@@ -185,5 +186,16 @@ body {
   }
   @media only screen and (max-width: 767px) {
     display: block;
+  }
+}
+.work__button {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    max-width: 200px;
+  }
+  a {
+    height: 60px;
   }
 }

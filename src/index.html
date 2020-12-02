@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="css\app.min.css" />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <a class="header__logo" href="#">
-          <img src="img/dist/logo.svg " alt="" />
-        </a>
-        <ul class="header__menu">
-          <li class="header__item">
-            <a class="header__link" href="#">Home</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">For Corporates</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">For HR Service Providers</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">About us</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Events</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Blog</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Contact</a>
-          </li>
-        </ul>
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a class="header__logo" href="#">
+            <img src="img/dist/logo.svg " alt="" />
+          </a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">For Corporates</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">For HR Service Providers</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">About us</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Events</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Blog</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <section class="banner">
@@ -206,7 +213,10 @@
     <!-- contact -->
     <section class="contact">
       <div class="wrapper">
-        <h3 class="contact__title title">Contact us for more info</h3>
+        <h3 class="contact__title title">
+          Contact us <br />
+          for more info
+        </h3>
         <p class="text">
           Our team is ready to hear about your challenges and answer questions
           about our solutions
