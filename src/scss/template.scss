@@ -27,6 +27,7 @@ $background-color: #f8f9fa;
 .block-banner--color {
   background-color: #f8f9fa;
 }
+
 .block-banner__footer {
   background-image: url(../img/dist/footer.jpg);
   background-repeat: no-repeat;
@@ -42,6 +43,11 @@ $background-color: #f8f9fa;
   line-height: 28px;
   max-width: 243px;
 }
+.block-banner__description--color {
+  color: $secondary-color;
+  max-width: 570px;
+  margin-bottom: 130px;
+}
 .text {
   color: $secondary-alpha;
   font-size: 21px;
@@ -53,7 +59,7 @@ $background-color: #f8f9fa;
 }
 .block-banner__headline {
   padding-bottom: 69px;
-  max-width: 354px;
+  max-width: 379px;
   color: $secondary-color;
   font-size: 50px;
   @media only screen and (max-width: 767px) {

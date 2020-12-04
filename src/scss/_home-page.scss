@@ -11,6 +11,9 @@
       padding-left: 15px;
     }
   }
+  &__wrapper--providers {
+    max-width: 873px;
+  }
   &__title {
     margin-bottom: 25px;
     @media only screen and (max-width: 767px) {
