@@ -24,6 +24,9 @@ $background-color: #f8f9fa;
   padding-top: 214px;
   padding-bottom: 185px;
 }
+.block-banner--color {
+  background-color: #f8f9fa;
+}
 .block-banner__footer {
   background-image: url(../img/dist/footer.jpg);
   background-repeat: no-repeat;
@@ -58,6 +61,12 @@ $background-color: #f8f9fa;
     max-width: 300px;
     padding-bottom: 25px;
   }
+}
+.block-banner--dot {
+  padding-bottom: 161px;
+  background-image: url(../img/dist/uniq-work.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 .block-banner--black {
   background-image: url(../img/dist/Group.png);
@@ -103,6 +112,7 @@ body {
   border-radius: 29px;
   padding: 20px 32px;
   border: 3px solid transparent;
+  margin-bottom: 20px;
   &:hover {
     border: #ff0164 solid 3px;
     background-color: transparent;

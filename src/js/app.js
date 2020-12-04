@@ -37,3 +37,21 @@ $('.header__burger').click(function(event){
     $('body').toggleClass('lock')
 });
  });
+ $('#corporates-carousel').owlCarousel({
+   loop:true,
+   nav: true,
+   dots: false,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        440:{
+            items:2
+        },
+
+        768:{
+            items:4
+        }
+    }
+});

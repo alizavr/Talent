@@ -2,6 +2,7 @@
   margin-top: 40px !important;
   display: flex;
   justify-content: flex-end;
+
   .owl-prev,
   .owl-next {
     background-color: transparent;
@@ -30,5 +31,13 @@
 .owl-item {
   img {
     width: auto !important;
+  }
+}
+#corporates-carousel {
+  .owl-nav {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    margin-bottom: 250px;
   }
 }

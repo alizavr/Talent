@@ -188,10 +188,17 @@
   &__caption--talent {
     max-width: 230px;
   }
+  &__description--color {
+    color: #29262b;
+    opacity: 0.8;
+  }
+  &--color {
+    color: #29262b;
+  }
 }
 
 // contact
-.contact {
+.block-banner--purple {
   position: relative;
   background-image: url(../img/src/contact-group.jpg);
   background-repeat: no-repeat;
@@ -200,23 +207,6 @@
   padding-top: 153px;
   padding-bottom: 153px;
   text-align: center;
-  &__title {
-    max-width: 679px;
-    margin: auto;
-  }
-  &__pic {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 320px;
-  }
-  &__btn {
-    color: #ffffff;
-    background-color: #ff0164;
-    border-radius: 29px;
-    padding: 20px 50px;
-    display: inline-block;
-  }
 }
 // clients
 .clients {
@@ -263,6 +253,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  &--corporates {
+    margin: 100px auto;
   }
 }
 // expert
