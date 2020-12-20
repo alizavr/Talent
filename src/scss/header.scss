@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
+  display: flex;
+  margin: auto;
   @media only screen and (max-width: 767px) {
     background-image: url(../img/dist/mob.jpg);
   }

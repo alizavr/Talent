@@ -1,5 +1,8 @@
 .banner--providers {
   background-image: url(../img/src/providers.jpg);
+  @media only screen and (max-width: 767px) {
+    background-image: url(../img/dist/mob.jpg);
+  }
 }
 .block-banner--black_large {
   background-image: url(../img/dist/providers-stand.png);

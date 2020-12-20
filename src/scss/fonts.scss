@@ -20,30 +20,42 @@
   text-transform: none;
 }
 
-.icon-arrow:before {
+.icon-about-arrow:before {
   content: "\E001";
 }
 
-.icon-right:before {
+.icon-arrow:before {
   content: "\E002";
 }
 
-.icon-social-facebook:before {
+.icon-in:before {
   content: "\E003";
 }
 
-.icon-social-instagram:before {
+.icon-mail:before {
   content: "\E004";
 }
 
-.icon-social-linkedIn:before {
+.icon-right:before {
   content: "\E005";
 }
 
-.icon-social-twitter:before {
+.icon-social-facebook:before {
   content: "\E006";
 }
 
-.icon-uniq-1:before {
+.icon-social-instagram:before {
   content: "\E007";
+}
+
+.icon-social-linkedIn:before {
+  content: "\E008";
+}
+
+.icon-social-twitter:before {
+  content: "\E009";
+}
+
+.icon-uniq-1:before {
+  content: "\E00A";
 }

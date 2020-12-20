@@ -80,7 +80,7 @@ function buildCopy(){
 function startWatch() {
     watch('src/img/src/**/*', optimizeImg);
     watch('src/**/' + preprocessor + '/**/*', styles);
-    watch(['src/**/*.js', '!app/**/*.min.js'], scripts);
+    watch(['src/js/app.js', '!src/js/app.min.js'], scripts);
 }
 
 function iconFont() {
