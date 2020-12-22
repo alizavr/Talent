@@ -1,0 +1,94 @@
+.banner--events {
+  background-image: url(../img/src/events__banner.jpg);
+  @media only screen and (max-width: 767px) {
+    background-image: url(../img/dist/mob.jpg);
+  }
+}
+.banner__black--events {
+  background-image: url(../img/dist/Group.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 204px;
+  padding-bottom: 265px;
+}
+.knowledge__info {
+  span {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 8px;
+    text-transform: uppercase;
+  }
+}
+.upcoming_events {
+  background-color: #ffffff;
+  padding-top: 49px;
+  padding-bottom: 214px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    margin-right: 20px;
+  }
+  &__link {
+    font-size: 14px;
+    color: #aeaeae;
+    background-color: #f3f3f3;
+    border-radius: 29px;
+    border: transparent;
+    width: 176px;
+    height: 58px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+    &:hover {
+      background-color: #8624db;
+      color: $secondary-color;
+    }
+  }
+}
+.service__info,
+.system__info {
+  span {
+    display: inline;
+    color: $main-color;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 8px;
+    text-transform: uppercase;
+    @media only screen and (max-width: 384px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.banner--black {
+  background-color: #070707;
+  padding-top: 220px;
+  padding-bottom: 256px;
+  position: relative;
+  top: -120px;
+}
+.contact_event {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 92px;
+  text-align: center;
+  &__title {
+    color: $main-color;
+    margin-bottom: 24px;
+  }
+  &__text {
+    color: $main-color;
+  }
+}

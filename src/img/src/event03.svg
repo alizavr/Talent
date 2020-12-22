@@ -1,0 +1,12 @@
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.015" height="17.015" viewBox="0 0 17.015 17.015">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff0164"/>
+      <stop offset="1" stop-color="#8624db"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_2974" data-name="Path 2974" d="M37.52,34a3.52,3.52,0,1,0,3.52,3.52A3.524,3.524,0,0,0,37.52,34Zm0,6.454a2.934,2.934,0,1,1,2.934-2.934A2.937,2.937,0,0,1,37.52,40.454Z" transform="translate(-24.026 -24.026)" fill="url(#linear-gradient)"/>
+  <path id="Path_2975" data-name="Path 2975" d="M47.053,40.76H45.587V39.293a.293.293,0,0,0-.587,0v1.76a.293.293,0,0,0,.293.293h1.76a.293.293,0,1,0,0-.587Z" transform="translate(-31.799 -27.559)" fill="url(#linear-gradient)"/>
+  <path id="Path_2976" data-name="Path 2976" d="M12.867,21H7v8.507h5.867v-5.28h5.28V21h-5.28Zm2.64.587h2.053V23.64H15.507Zm-5.28,0H12.28V23.64H10.227Zm-2.64,0H9.64V23.64H7.587Zm0,2.64H9.64V26.28H7.587ZM9.64,28.921H7.587V26.867H9.64Zm2.64,0H10.227V26.867H12.28Zm0-2.64H10.227V24.227H12.28Zm2.64-2.64H12.867V21.587h2.053Z" transform="translate(-4.947 -14.84)" fill="url(#linear-gradient)"/>
+  <path id="Path_2977" data-name="Path 2977" d="M9.681,16.135H.587V4.694H14.668V8.507a.293.293,0,0,0,.587,0V1.467a.293.293,0,0,0-.293-.293H13.494V.293A.293.293,0,0,0,13.2,0H11.148a.293.293,0,0,0-.293.293v.88H4.4V.293A.293.293,0,0,0,4.107,0H2.053A.293.293,0,0,0,1.76.293v.88H.293A.293.293,0,0,0,0,1.467V16.428a.293.293,0,0,0,.293.293H9.681a.293.293,0,1,0,0-.587ZM11.441.587h1.467v1.76H11.441V.587Zm-9.094,0H3.814v1.76H2.347V.587ZM.587,1.76H1.76v.88a.293.293,0,0,0,.293.293H4.107A.293.293,0,0,0,4.4,2.64V1.76h6.454v.88a.293.293,0,0,0,.293.293H13.2a.293.293,0,0,0,.293-.293V1.76h1.173V4.107H.587Z" fill="url(#linear-gradient)"/>
+</svg>
