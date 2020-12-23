@@ -390,10 +390,10 @@
     display: inline;
     color: #ff0164;
     font-size: 14px;
-    margin-left: 13px;
+    margin-left: 4px;
   }
   time {
-    margin-left: 12px;
+    margin-left: 10px;
     text-align: left;
     color: $main-color;
     opacity: 0.5;
@@ -402,10 +402,10 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    margin-top: 53px;
   }
 }
 .block__articles--mobile {
-  margin-bottom: 53px;
   @media only screen and (max-width: 767px) {
     display: none;
   }

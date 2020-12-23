@@ -79,6 +79,7 @@
   margin-bottom: 120px;
   @media only screen and (max-width: 767px) {
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 .all__item,
@@ -88,15 +89,12 @@
 .expertise__item {
   color: #8624db;
   border-radius: 29px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid transparent;
   background-color: #f3f3f3;
   padding: 20px 60px;
   font-style: 14px;
+  margin-bottom: 10px;
 }
-.icon-about-arrow.opened {
-  transform: rotate(-180deg);
-}
-
 .all__item {
   background-color: #8624db;
   color: $secondary-color;
@@ -106,7 +104,11 @@
   left: 0;
   top: 0px;
   display: none;
-  padding-top: 60px;
+  margin-top: 63px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .sub-region__item {
@@ -140,13 +142,14 @@
   right: 45px;
   top: 4px;
   color: #8624db;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
 }
 .actived {
   border: 1px solid #8624db;
   border-radius: 29px;
   background-color: #fff;
+  color: #8624db;
 }
 
 p.icon-about-arrow:before:hover {

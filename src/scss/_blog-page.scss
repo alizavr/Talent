@@ -1,0 +1,108 @@
+.banner--blog {
+  background-image: url(../img/dist/banner-blog.jpg);
+  padding-top: 200px;
+  padding-bottom: 270px;
+  @media only screen and (max-width: 767px) {
+    background-image: url(../img/dist/mob.jpg);
+  }
+}
+.block-banner__blog {
+  background-image: url(../img/dist/group-articles01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 190px;
+  padding-bottom: 216px;
+  position: relative;
+  top: -200px;
+}
+.blog__banner--pink {
+  position: relative;
+  top: -330px;
+}
+.blog__footer {
+  position: relative;
+  top: -330px;
+}
+.topics {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+.topics li {
+  position: relative;
+}
+.category__item,
+.tags__item {
+  color: $secondary-color;
+  border-radius: 29px;
+  border: 2px solid rgba($color: #ffffff, $alpha: 0.5);
+  background-color: transparent;
+  padding: 20px 50px;
+  font-style: 14px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+.icon--color:before {
+  color: #fff;
+}
+.icon-uniq-2:before {
+  content: "\E00B";
+  font-family: "Icon";
+  color: $secondary-alpha;
+  font-size: 15px;
+}
+input[type="search"]::placeholder {
+  color: rgba($color: #ffffff, $alpha: 0.5);
+}
+.search {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 50px;
+  }
+  &-box {
+    display: flex;
+    position: absolute;
+    border: 2px solid rgba($color: #ffffff, $alpha: 0.5);
+    background-color: transparent;
+    height: 58px;
+    border-radius: 40px;
+  }
+  &-txt {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+}
+
+.search-box:hover .search-txt {
+  width: 266px;
+  padding: 0 6px;
+}
+.search-box:hover .search-btn {
+  border: none;
+  background-color: transparent;
+}
