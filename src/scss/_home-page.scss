@@ -535,28 +535,37 @@
 }
 
 input[type="text"] {
-  width: 139px;
   color: $secondary-color;
   background-color: transparent;
   border: 2px solid #ff0164;
   height: 58px;
   font-size: 14px;
-  display: inline;
+  display: inline-block;
   padding-left: 10px;
-  margin-right: 3px;
   @media only screen and (max-width: 767px) {
     display: none;
   }
 }
+.footer-text-input {
+  display: inline;
+  width: 139px;
+  margin-right: 3px;
+}
+
 input[type="email"] {
-  width: 363px;
   color: $secondary-color;
   background-color: transparent;
   border: 2px solid #ff0164;
   height: 58px;
   font-size: 14px;
-  display: inline;
   padding-left: 10px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+}
+.footer-email-input {
+  display: inline;
+  width: 363px;
   margin-right: 3px;
   @media only screen and (max-width: 767px) {
     width: 100%;
@@ -607,8 +616,7 @@ input[type="email"] {
 }
 .radio {
   padding-left: 20px;
-  color: $secondary-color;
-  opacity: 0.5;
+  color: rgba($color: #ffffff, $alpha: 0.5);
   font-size: 11px;
   @media only screen and (max-width: 767px) {
     display: none;

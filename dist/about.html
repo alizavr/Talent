@@ -790,9 +790,17 @@
         <p class="footer__subscribe">Subscribe to our newsletter</p>
         <div class="footer__content">
           <form method="POST">
-            <input type="text" placeholder="Name*" />
-            <input type="text" placeholder="Surname*" />
-            <input type="email" placeholder="Email address*" />
+            <input type="text" class="footer-text-input" placeholder="Name*" />
+            <input
+              type="text"
+              class="footer-text-input"
+              placeholder="Surname*"
+            />
+            <input
+              type="email"
+              class="footer-email-input"
+              placeholder="Email address*"
+            />
             <button class="footer__button--mobile button" type="submit">
               Submit
             </button>
@@ -832,12 +840,12 @@
           </div>
         </div>
         <label class="radio">
-          <input class="radio__input" type="radio" />
+          <input class="radio__input" name="footer" type="radio" />
           <span class="radio__box"></span>
           I would like to subscribe for the newsletter
         </label>
         <label class="radio">
-          <input class="radio__input" type="radio" />
+          <input class="radio__input" name="footer" type="radio" />
           <span class="radio__box"></span>
           I consent toTalent Logiqs collecting and storing my data from this
           form
