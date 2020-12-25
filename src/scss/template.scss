@@ -5,7 +5,9 @@ $secondary-alpha: rgba(
   $alpha: 0.8,
 );
 $background-color: #f8f9fa;
-
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   max-width: 919px;
   margin: auto;
