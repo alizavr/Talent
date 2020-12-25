@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css\app.min.css" />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
   </head>
   <body>
     <header id="header" class="header">
       <div class="container">
         <div class="header__body">
-          <a class="header__logo" href="#">
+          <a class="header__logo" href="index.html">
             <img src="img/dist/logo.svg " alt="" />
           </a>
           <div class="header__burger">
@@ -22,10 +23,14 @@
                 <a class="header__link" href="index.html">Home</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="corporates.html">For Corporates</a>
+                <a class="header__link" href="corporates.html"
+                  >For Corporates</a
+                >
               </li>
               <li class="header__item">
-                <a class="header__link" href="providers.html">For HR Service Providers</a>
+                <a class="header__link" href="providers.html"
+                  >For HR Service Providers</a
+                >
               </li>
               <li class="header__item">
                 <a class="header__link" href="about.html">About us</a>
@@ -57,10 +62,10 @@
         </div>
       </div>
       <div class="banner__icon">
-        <a href="#" class="icon-arrow"></a>
+        <a href="#next" class="icon-arrow"></a>
       </div>
     </section>
-    <section class="block-banner--black">
+    <section class="block-banner--black" id="next">
       <div class="wrapper">
         <div class="competition">
           <h3 class="competition__title">Stand out from the competition.</h3>
@@ -73,7 +78,6 @@
           </p>
           <a class="button" href="#">For organisations</a>
           <a class="button button--purple" href="#">For HR Service Providers</a>
-        </div>
         </div>
       </div>
     </section>
@@ -91,31 +95,30 @@
           </p>
           <div class="team__content">
             <div class="team__aside">
-              <a href="#popup" class="popup-link">
+              <a data-fancybox="gallery" data-src="#team1" href="#">
                 <img class="team__img" src="img/dist/team1.jpg" alt="" />
               </a>
-              
+
               <p class="team__subtitle">Wouter Van Bockhaven</p>
               <p class="team__text">Co-Founder</p>
               <a class="icon-mail" href="#"></a>
               <a class="icon-in" href="#"></a>
             </div>
             <div class="team__aside">
-              <a href="#popup" class="popup-link">
+              <a data-fancybox="gallery" data-src="#team2" href="#">
                 <img class="team__img" src="img/dist/team2.jpg" alt="" />
               </a>
-              
-              <p class="team__subtitle">Wouter Van Bockhaven</p>
+
+              <p class="team__subtitle">Lesley Vanleke</p>
               <p class="team__text">Co-Founder</p>
               <a class="icon-mail" href="#"></a>
               <a class="icon-in" href="#"></a>
             </div>
             <div class="team__aside">
-              <a href="#popup" class="popup-link">
-                 <img class="team__img" src="img/dist/team3.jpg" alt="" />
+              <a data-fancybox="gallery" data-src="#team3" href="#">
+                <img class="team__img" src="img/dist/team3.jpg" alt="" />
               </a>
-             
-              <p class="team__subtitle">Wouter Van Bockhaven</p>
+              <p class="team__subtitle">Ann Daeseleire</p>
               <p class="team__text">Co-Founder</p>
               <a class="icon-mail" href="#"></a>
               <a class="icon-in" href="#"></a>
@@ -123,45 +126,91 @@
           </div>
         </div>
       </div>
-      <!-- <div id="popup" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
+      <div style="display: none" id="team1">
+        <div class="popup">
+          <img class="popup__pic" src="img/dist/Lesley-fancy.jpg" alt="" />
           <div class="popup__content">
-            <a href="#header" class="popup__close">X</a> -->
-            <!-- <p class="team__subtitle">Lesley Vanleke</p>
-              <p class="team__text">Co-Founder</p>
-            <div class="popup__title"></div>
-            <div class="popup__text">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-            </div> -->
-            <div class="owl-carousel">
-              <div class="expert">
-                <img class="expert__pic" src="img/dist/provider.jpg" alt="" />
-                <div class="expert__content">
-                  <h4 class="expert__title">Lesley Vanleke</h4>
-                  <h3 class="expert__text">
-                    Co-Founder
-                  </h3>
-                  <p class="expert__description">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-                  </p>
-                </div>
-              </div>
-              <div class="expert">
-                <img class="expert__pic" src="img/dist/provider.jpg" alt="" />
-                <div class="expert__content">
-                  <h4 class="expert__title">Lesley Vanleke</h4>
-                  <h3 class="expert__text">
-                    Co-Founder
-                  </h3>
-                  <p class="expert__description">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-                  </p>
-                </div>
-              </div>
-            
+            <h4 class="popup__title">Wouter Van Bockhaven</h4>
+            <p class="popup__subtitle">Co-Founder</p>
+            <p class="popup__description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+            </p>
+            <div class="popup__info">
+              <span class="pink">Email:</span>
+              <a class="popup__email" href="mailto:jhondoe@talentlogiqs.com"
+                >jhondoe@talentlogiqs.com
+              </a>
             </div>
-            
+            <div class="popup-tel__info">
+              <span class="pink">Telephone: </span>
+              <a class="popup__tel" href="tel:+32492858694">+32 492 85 86 94</a>
+            </div>
+            <a class="icon-twitter" href="#"></a>
+            <a class="icon-in" href="#"></a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: none" id="team2">
+        <div class="popup">
+          <img class="popup__pic" src="img/dist/Lesley-fancy.jpg" alt="" />
+          <div class="popup__content">
+            <h4 class="popup__title">Lesley Vanleke</h4>
+            <p class="popup__subtitle">Co-Founder</p>
+            <p class="popup__description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+            </p>
+            <div class="popup__info">
+              <span class="pink">Email:</span>
+              <a class="popup__email" href="mailto:jhondoe@talentlogiqs.com"
+                >jhondoe@talentlogiqs.com
+              </a>
+            </div>
+            <div class="popup-tel__info">
+              <span class="pink">Telephone: </span>
+              <a class="popup__tel" href="tel:+32492858694">+32 492 85 86 94</a>
+            </div>
+            <a class="icon-twitter" href="#"></a>
+            <a class="icon-in" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div style="display: none" id="team3">
+        <div class="popup">
+          <img class="popup__pic" src="img/dist/Lesley-fancy.jpg" alt="" />
+          <div class="popup__content">
+            <h4 class="popup__title">Ann Daeseleire</h4>
+            <p class="popup__subtitle">Co-Founder</p>
+            <p class="popup__description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+            </p>
+            <div class="popup__info">
+              <span class="pink">Email:</span>
+              <a class="popup__email" href="mailto:jhondoe@talentlogiqs.com"
+                >jhondoe@talentlogiqs.com
+              </a>
+            </div>
+            <div class="popup-tel__info">
+              <span class="pink">Telephone: </span>
+              <a class="popup__tel" href="tel:+32492858694">+32 492 85 86 94</a>
+            </div>
+            <a class="icon-twitter" href="#"></a>
+            <a class="icon-in" href="#"></a>
           </div>
         </div>
       </div>
@@ -172,290 +221,256 @@
         <h3 class="headline">Certified Experts</h3>
         <p class="description">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-          Lorem ipsum dolor sit amet.
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
         </p>
         <div class="region">
-           <ul class="drop__list">
-             <li>
-               <p class="all__item items ">All</p>
-             </li>
-             <li class="region__item">
-             <p class="icon-about-arrow"></p>
-               <span> Region</span>
-               <ul class="sub-region__list">
-                 <li class="sub-region__item">
-                  East-Flanders
-                 </li>
-                 <li class="sub-region__item">
-                  Flemish Brabant
-                </li>
-                <li class="sub-region__item">
-                  West-Flanders
-                </li>
-                <li class="sub-region__item">
-                  Antwerp
-                </li>
-                <li class="sub-region__item">
-                  Limburg
-                </li>
-                <li class="sub-region__item">
-                  Namur
-                </li>
-                <li class="sub-region__item">
-                  Walloon Brabant
-                </li>
-               </ul>
-             </li>
-             <li>
+          <ul class="drop__list">
+            <li>
+              <p class="all__item items">All</p>
+            </li>
+            <li class="region__item">
+              <p class="icon-about-arrow"></p>
+              <span> Region</span>
+              <ul class="sub-region__list">
+                <li class="sub-region__item">East-Flanders</li>
+                <li class="sub-region__item">Flemish Brabant</li>
+                <li class="sub-region__item">West-Flanders</li>
+                <li class="sub-region__item">Antwerp</li>
+                <li class="sub-region__item">Limburg</li>
+                <li class="sub-region__item">Namur</li>
+                <li class="sub-region__item">Walloon Brabant</li>
+              </ul>
+            </li>
+            <li>
               <p class="language__item items">Language</p>
               <span class="icon-about-arrow"></span>
-               <ul class="sub-region__list">
-                 <li class="sub-region__item">
-                  East-Flanders
-                 </li>
-                 <li class="sub-region__item">
-                  Flemish Brabant
-                </li>
-                <li class="sub-region__item">
-                  West-Flanders
-                </li>
-                <li class="sub-region__item">
-                  Antwerp
-                </li>
-                <li class="sub-region__item">
-                  Limburg
-                </li>
-                <li class="sub-region__item">
-                  Namur
-                </li>
-                <li class="sub-region__item">
-                  Walloon Brabant
-                </li>
-               </ul>
+              <ul class="sub-region__list">
+                <li class="sub-region__item">East-Flanders</li>
+                <li class="sub-region__item">Flemish Brabant</li>
+                <li class="sub-region__item">West-Flanders</li>
+                <li class="sub-region__item">Antwerp</li>
+                <li class="sub-region__item">Limburg</li>
+                <li class="sub-region__item">Namur</li>
+                <li class="sub-region__item">Walloon Brabant</li>
+              </ul>
             </li>
             <li>
               <p class="type__item items">Type</p>
               <span class="icon-about-arrow"></span>
-               <ul class="sub-region__list">
-                 <li class="sub-region__item">
-                  East-Flanders
-                 </li>
-                 <li class="sub-region__item">
-                  Flemish Brabant
-                </li>
-                <li class="sub-region__item">
-                  West-Flanders
-                </li>
-                <li class="sub-region__item">
-                  Antwerp
-                </li>
-                <li class="sub-region__item">
-                  Limburg
-                </li>
-                <li class="sub-region__item">
-                  Namur
-                </li>
-                <li class="sub-region__item">
-                  Walloon Brabant
-                </li>
-               </ul>
+              <ul class="sub-region__list">
+                <li class="sub-region__item">East-Flanders</li>
+                <li class="sub-region__item">Flemish Brabant</li>
+                <li class="sub-region__item">West-Flanders</li>
+                <li class="sub-region__item">Antwerp</li>
+                <li class="sub-region__item">Limburg</li>
+                <li class="sub-region__item">Namur</li>
+                <li class="sub-region__item">Walloon Brabant</li>
+              </ul>
             </li>
             <li>
               <p class="expertise__item items">Expertise</p>
               <span class="icon-about-arrow"></span>
-               <ul class="sub-region__list">
-                 <li class="sub-region__item">
-                  East-Flanders
-                 </li>
-                 <li class="sub-region__item">
-                  Flemish Brabant
-                </li>
-                <li class="sub-region__item">
-                  West-Flanders
-                </li>
-                <li class="sub-region__item">
-                  Antwerp
-                </li>
-                <li class="sub-region__item">
-                  Limburg
-                </li>
-                <li class="sub-region__item">
-                  Namur
-                </li>
-                <li class="sub-region__item">
-                  Walloon Brabant
-                </li>
-               </ul>
+              <ul class="sub-region__list">
+                <li class="sub-region__item">East-Flanders</li>
+                <li class="sub-region__item">Flemish Brabant</li>
+                <li class="sub-region__item">West-Flanders</li>
+                <li class="sub-region__item">Antwerp</li>
+                <li class="sub-region__item">Limburg</li>
+                <li class="sub-region__item">Namur</li>
+                <li class="sub-region__item">Walloon Brabant</li>
+              </ul>
             </li>
-           </ul>
-         </div>
+          </ul>
+        </div>
 
-<div class="masters">
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-
-</div>
-<div class="masters masters__mobile">
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-
-</div>
-<div class="masters masters__mobile">
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-  <div class="master">
-    <img class="master__pic" src="img/dist/expert-emma.jpg" alt="">
-<h4 class="master__title">Emma Moe</h4>
-<h4 class="master__subtitle">TalentLogiqs Expertise
-</h4>
-<p class="master__description"> <span>Languages:</span>  Dutch, French, English
-  <span>Regions:</span> East-Flanders, Flemish Brabant, West-Flanders, Antwerp</p>
-  <div class="master__icon">
-    <a href="#" class="icon-right"></a>
-  </div>
-  <p class="master__text">Discover more</p>
-  </div>
-</div>
-<div class="expert">
-  <a class="expert__button button" href="#">Become an expert</a>
-</div>
+        <div class="masters">
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+        </div>
+        <div class="masters masters__mobile">
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+        </div>
+        <div class="masters masters__mobile">
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+          <div class="master">
+            <img class="master__pic" src="img/dist/expert-emma.jpg" alt="" />
+            <h4 class="master__title">Emma Moe</h4>
+            <h4 class="master__subtitle">TalentLogiqs Expertise</h4>
+            <p class="master__description">
+              <span>Languages:</span> Dutch, French, English
+              <span>Regions:</span> East-Flanders, Flemish Brabant,
+              West-Flanders, Antwerp
+            </p>
+            <div class="master__icon">
+              <a href="#" class="icon-right"></a>
+            </div>
+            <p class="master__text">Discover more</p>
+          </div>
+        </div>
+        <div class="expert">
+          <a class="expert__button button" href="#">Become an expert</a>
+        </div>
       </div>
     </section>
     <section class="block-banner--purple">
       <div class="wrapper">
-        <h3 class="contact__title title">
-          Schedule a call</h3>
+        <h3 class="contact__title title">Schedule a call</h3>
         <p class="text">
-          Our team is ready to hear about your challenges and answer questions about our solutions
+          Our team is ready to hear about your challenges and answer questions
+          about our solutions
         </p>
         <a class="button" href="#">Contact us</a>
       </div>
@@ -463,17 +478,19 @@
     <section class="banner-partners">
       <div class="wrapper">
         <div class="partners">
-          <h3 class="partners__title">
-            Our Knowledge 
-            Partners 
-          </h3>
-          <p class="partners__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <h3 class="partners__title">Our Knowledge Partners</h3>
+          <p class="partners__description">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </p>
         </div>
         <div class="knowledge">
           <img class="knowledge__pic" src="img/dist/partners1.jpg" alt="" />
           <div class="knowledge__content">
-            <h3 class="knowledge__headline headline">University of 
-              Antwerp</h3>
+            <h3 class="knowledge__headline headline">University of Antwerp</h3>
             <p class="knowledge__description description">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -489,9 +506,7 @@
         </div>
         <div class="study">
           <div class="study__content">
-            <h3 class="study__headline headline">
-            Thalento
-            </h3>
+            <h3 class="study__headline headline">Thalento</h3>
             <p class="study__description">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -507,7 +522,9 @@
         <div class="knowledge">
           <img class="knowledge__pic" src="img/dist/partners3.jpg" alt="" />
           <div class="knowledge__content">
-            <h3 class="knowledge__headline headline">Flemish Agency for Innovation and Entrepreneurshipя</h3>
+            <h3 class="knowledge__headline headline">
+              Flemish Agency for Innovation and Entrepreneurshipя
+            </h3>
             <p class="knowledge__description description">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -598,7 +615,7 @@
               <a href="#" class="icon-right"></a>
             </div>
             <p class="article__caption">Read more</p>
-            <time>June 05,2019</time>
+            <time datetime="2019-06-05">June 05,2019</time>
           </div>
           <div class="article">
             <img
@@ -616,7 +633,7 @@
               <a href="#" class="icon-right"></a>
             </div>
             <p class="article__caption">Read more</p>
-            <time>June 01,2019</time>
+            <time datetime="2019-06-01">June 01,2019</time>
           </div>
           <div class="article">
             <img
@@ -636,7 +653,7 @@
               <a href="#" class="icon-right"></a>
             </div>
             <p class="article__caption">Read more</p>
-            <time>May 18,2019</time>
+            <time datetime="2019-05-18">May 18,2019</time>
           </div>
         </div>
 
@@ -659,7 +676,7 @@
               <a href="#" class="icon-right"></a>
             </div>
             <p class="article__caption">Read more</p>
-            <time>May 09,2019</time>
+            <time datetime="2019-05-09">May 09,2019</time>
           </div>
           <div class="article">
             <img
@@ -679,7 +696,7 @@
               <a href="#" class="icon-right"></a>
             </div>
             <p class="article__caption">Read more</p>
-            <time>April 24,2019</time>
+            <time datetime="2019-04-24">April 24,2019</time>
           </div>
           <div class="article">
             <img
@@ -697,7 +714,7 @@
               <a href="#" class="icon-right"></a>
             </div>
             <p class="article__caption">Read more</p>
-            <time>April 17, 2019</time>
+            <time datetime="2019-04-17">April 17, 2019</time>
           </div>
         </div>
         <a href="#" class="article__button button">Load more articles</a>
@@ -781,7 +798,7 @@
                   "
                 >info@talentlogiqs.be
               </a>
-              <a class="footer__contact" href="tel:+32 492 85 86 94"
+              <a class="footer__contact" href="tel:+32492858694"
                 >+32 492 85 86 94</a
               >
             </div>
@@ -866,6 +883,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
