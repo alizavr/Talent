@@ -25,6 +25,10 @@ html {
   background-position: top;
   padding-top: 214px;
   padding-bottom: 185px;
+  @media only screen and (max-width: 767px) {
+    padding-top: 140px;
+    padding-bottom: 90px;
+  }
 }
 .block-banner--color {
   background-color: #f8f9fa;
@@ -100,6 +104,10 @@ html {
   position: relative;
   top: -120px;
   text-align: center;
+  @media only screen and (max-width: 767px) {
+    padding-top: 140px;
+    padding-bottom: 90px;
+  }
 }
 body {
   background-color: #fff;

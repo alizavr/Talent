@@ -17,19 +17,58 @@ if(isMobile.any()){
 $( ".sub-region__item" ).on( "click", function() {
     $(this).toggleClass('actived');
 });
-$('[data-fancybox="gallery"]').fancybox({
+$(document).ready(function(){
+    $('.header__burger').click(function(event){
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock')
+    });
+     });
+  $('[data-fancybox="gallery"]').fancybox({
     buttons : [ 
-      'slideShow',
-      'share',
-      'zoom',
-      'fullScreen',
-      'download',
-      'close'
-    ],
+        'slideShow',
+        'share',
+        'zoom',
+        'fullScreen',
+        'download',
+        'close'
+      ],
+      
+      infobar: false,
+    btnTpl: {
+  
+      arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left prev" title="{{PREV}}">' +
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>' +
+        "</button>",
+  
+      arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right next" title="{{NEXT}}">' +
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>' +
+        "</button>"
+  
+    }
     
-    infobar: false,
-    
+  
   });
+
+
+  $('#corporates-carousel').owlCarousel({
+    loop:true,
+    nav: true,
+    dots: false,
+ 
+     responsive:{
+         0:{
+             items:1
+         },
+         440:{
+             items:2
+         },
+ 
+         768:{
+             items:4
+         }
+     }
+ });
+ 
 
 $(document).ready(function(){
 
@@ -64,27 +103,5 @@ $(document).ready(function(){
         }
     });
   });
- $(document).ready(function(){
-$('.header__burger').click(function(event){
-    $('.header__burger, .header__menu').toggleClass('active');
-    $('body').toggleClass('lock')
-});
- });
- $('#corporates-carousel').owlCarousel({
-   loop:true,
-   nav: true,
-   dots: false,
 
-    responsive:{
-        0:{
-            items:1
-        },
-        440:{
-            items:2
-        },
-
-        768:{
-            items:4
-        }
-    }
-});
+ 
